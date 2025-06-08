@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Bebas Neue Pro Bold';
+    src: url("./fonts/BebasNeuePro-Bold.woff2") format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+.font-bebas-bold {
+    font-family: 'Bebas Neue Pro Bold', sans-serif;
+}
+
+
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url("./fonts/BebasNeuePro-Regular.woff2") format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+.font-bebas-regular {
+    font-family: 'Bebas Neue Pro', sans-serif;
+}
+
+
+
+@font-face {
+    font-family: 'SF pro Display';
+    src: url("./fonts/SFProDisplay-Regular.woff2") format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+.font-sf-regular {
+    font-family: 'SF pro Display', sans-serif;
+}
+
+@font-face {
+    font-family: 'SF pro Display Bold';
+    src: url("./fonts/SFProDisplay-Bold.woff2") format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+.font-sf-bold {
+    font-family: 'SF pro Display Bold', sans-serif;
+}
+
+@font-face {
+    font-family: 'SF pro Display Black';
+    src: url("./fonts/SFProDisplay-Black.woff2") format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+.font-sf-black {
+    font-family: 'SF pro Display Black', sans-serif;
+}
