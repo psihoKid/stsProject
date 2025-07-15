@@ -7,21 +7,21 @@ import support from "../assets/support.svg";
 
 export default function InfrastructureSupport() {
     return (
-        <section id="support" className="w-full py-16 bg-white">
+        <section id="support" className="w-full py-16 bg-gray-900">
             <div className="max-w-7xl mx-auto px-4">
-                {/* Основной заголовок */}
-                <h2 className="text-3xl font-sf-regular text-gray-900 mb-16">
+                {/* Основной заголовок - добавлено text-center */}
+                <h2 className="text-3xl font-sf-regular text-white mb-16 text-center">
                     Инфраструктура безопасность<br />
-                    <span className="font-sf-regular">и IT-поддержка</span>
+                    <span className="font-sf-regular text-gray-300">и IT-поддержка</span>
                 </h2>
 
                 {/* Центральный блок безопасности */}
                 <div className="flex justify-center mb-16">
                     <div className="text-center max-w-2xl">
-                        <h3 className="text-2xl font-sf-regular uppercase text-gray-900 mb-6">
+                        <h3 className="text-2xl font-sf-regular uppercase text-white mb-6">
                             ИНФОРМАЦИОННАЯ БЕЗОПАСНОСТЬ:
                         </h3>
-                        <p className="text-gray-700 font-sf-regular mb-8">
+                        <p className="text-gray-300 font-sf-regular mb-8">
                             АУДИТ БЕЗОПАСНОСТИ IT СИСТЕМ И ДАННЫХ, РЕЗЕРВИРОВАНИЕ АППАРАТНЫХ И ИНФОРМАЦИОННЫХ РЕСУРСОВ,
                             ЗАЩИТА КОНФИДЕНЦИАЛЬНОЙ ИНФОРМАЦИИ ОТ КИБЕРАТАК И ВИРУСОВ, ОБУЧЕНИЕ СОТРУДНИКОВ
                         </p>
@@ -29,7 +29,7 @@ export default function InfrastructureSupport() {
                             <img
                                 src={security}
                                 alt="Информационная безопасность"
-                                className="w-[123px] h-[126] object-cover rounded-lg"
+                                className="w-[123px] h-[126px] object-cover rounded-lg"
                             />
                         </div>
                     </div>
@@ -38,71 +38,72 @@ export default function InfrastructureSupport() {
                 {/* Горизонтальные блоки услуг */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* 1. Проектирование и аудит */}
-                    <div className="p-4 rounded-lg flex flex-col items-center text-center">
-                        <div className="mb-4 w-32 h-24">
+                    <div className="p-6 rounded-lg bg-gray-800 flex flex-col items-center text-center hover:bg-gray-700 transition-colors">
+                        <div className="mb-4 w-32 h-24 flex items-center justify-center"> {/* Добавлен flex для центрирования */}
                             <img
                                 src={design}
                                 alt="Проектирование и аудит"
-                                className="w-[106px] h-[125px]  object-cover rounded"
+                                className="w-20 h-20 object-contain rounded" // Уменьшен размер
                             />
                         </div>
-                        <h3 className="text-xl font-bold uppercase text-[#ffffff] mb-2">
-                            ᵣ
+                        <h3 className="text-xl font-bold uppercase text-white mb-2">
+                            ПРОЕКТИРОВАНИЕ
                         </h3>
-                        <p className="text-gray-900 font-sf-regular font-medium">
+                        <p className="text-gray-300 font-sf-regular">
                             Проектирование<br />
                             и аудит IT-инфраструктуры
                         </p>
                     </div>
 
                     {/* 2. Построение и сопровождение */}
-                    <div className="p-4 rounded-lg flex flex-col items-center text-center">
-                        <div className="mb-4 w-32 h-24">
+                    <div className="p-6 rounded-lg bg-gray-800 flex flex-col items-center text-center hover:bg-gray-700 transition-colors">
+                        <div className="mb-4 w-32 h-24 flex items-center justify-center">
                             <img
                                 src={construction}
-                                alt="Проектирование и аудит"
-                                className="w-[123px] h-[126]  object-cover rounded"
+                                alt="Построение и сопровождение"
+                                className="w-20 h-20 object-contain rounded" // Уменьшен размер
                             />
                         </div>
-                        <h3 className="text-xl font-bold uppercase text-[#ffffff] mb-2">
-                            ᵣ
+                        <h3 className="text-xl font-bold uppercase text-white mb-2">
+                            СОПРОВОЖДЕНИЕ
                         </h3>
-                        <p className="text-gray-900 font-sf-regular font-medium">
-                            Построение и сопровождение шагов
+                        <p className="text-gray-300 font-sf-regular">
+                            Построение и сопровождение<br />
+                            IT-инфраструктуры
                         </p>
                     </div>
 
                     {/* 3. Интеграция систем */}
-                    <div className="p-4 rounded-lg flex flex-col items-center text-center">
-                        <div className="mb-4 w-32 h-24">
+                    <div className="p-6 rounded-lg bg-gray-800 flex flex-col items-center text-center hover:bg-gray-700 transition-colors">
+                        <div className="mb-4 w-32 h-24 flex items-center justify-center">
                             <img
                                 src={integration}
-                                alt="Проектирование и аудит"
-                                className="w-[128px] h-[99px]  object-cover rounded"
+                                alt="Интеграция систем"
+                                className="w-20 h-20 object-contain rounded" // Уменьшен размер
                             />
                         </div>
-                        <h3 className="text-xl font-bold uppercase text-[#ffffff] mb-2">
-                            ᵣ
+                        <h3 className="text-xl font-bold uppercase text-white mb-2">
+                            ИНТЕГРАЦИЯ
                         </h3>
-                        <p className="text-gray-900 font-sf-regular font-medium">
+                        <p className="text-gray-300 font-sf-regular">
                             Интеграция IP-телефонии,<br />
                             видеонаблюдения, ВКС
                         </p>
                     </div>
 
                     {/* 4. Техподдержка */}
-                    <div className="p-4 rounded-lg flex flex-col items-center text-center">
-                        <div className="mb-4 w-32 h-24">
+                    <div className="p-6 rounded-lg bg-gray-800 flex flex-col items-center text-center hover:bg-gray-700 transition-colors">
+                        <div className="mb-4 w-32 h-24 flex items-center justify-center">
                             <img
                                 src={support}
-                                alt="Проектирование и аудит"
-                                className="w-[114px] h-[101px]  object-cover rounded"
+                                alt="Техническая поддержка"
+                                className="w-20 h-20 object-contain rounded" // Уменьшен размер
                             />
                         </div>
-                        <h3 className="text-xl font-bold uppercase text-[#ffffff] mb-2">
-                            ᵣ
+                        <h3 className="text-xl font-bold uppercase text-white mb-2">
+                            ПОДДЕРЖКА
                         </h3>
-                        <p className="text-gray-900 font-sf-regular font-medium">
+                        <p className="text-gray-300 font-sf-regular">
                             Техническая поддержка 24/7<br />
                             и SERVICE DESK
                         </p>

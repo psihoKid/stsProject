@@ -1,4 +1,3 @@
-// src/components/ProductDevelopment.jsx
 import React from "react";
 
 export default function ProductDevelopment() {
@@ -31,8 +30,8 @@ export default function ProductDevelopment() {
     const dx06 = 0;
 
     return (
-        <section className="w-full bg-gray-50 py-12">
-            <h2 className="text-2xl md:text-3xl font-sf-regular text-gray-900 mb-12 text-center">
+        <section className="w-full bg-gray-900 py-12">
+            <h2 className="text-2xl md:text-3xl font-sf-regular text-white mb-12 text-center">
                 Продуктовая разработка
             </h2>
 
@@ -109,7 +108,7 @@ export default function ProductDevelopment() {
                                 style={{
                                     marginTop: `${labelOffset}px`,
                                     fontSize: "14px",
-                                    color: "#333",
+                                    color: "#E5E7EB",
                                 }}
                             >
                                 {labels[id]}
@@ -193,7 +192,6 @@ export default function ProductDevelopment() {
                                 lineHeight: 1,
                                 color: "#06D77F",
                                 fontWeight: 700,
-
                             }}
                         >
                             {step.id}
@@ -202,7 +200,7 @@ export default function ProductDevelopment() {
                             style={{
                                 marginTop: `${labelOffset}px`,
                                 fontSize: "14px",
-                                color: "#333",
+                                color: "#E5E7EB",
                             }}
                         >
                             {step.label}
@@ -210,16 +208,14 @@ export default function ProductDevelopment() {
                     </div>
                 ))}
 
-                {/* Буллет-лист справа от 03 — теперь на середине вертикальной линии */}
+                {/* Буллет-лист справа от 03 */}
                 <ul
                     style={{
                         position: "absolute",
-                        // поднимаем на 15px
                         top: `calc(${yVertTop + verticalLen / 2}px - 70px)`,
-                        // сдвигаем влево на 15px: из +20px делаем +5px
                         left: `calc(50% - ${halfTop}px + ${d12 + d23}px + 5px)`,
                         maxWidth: "200px",
-                        color: "#333",
+                        color: "#E5E7EB",
                         fontSize: "14px",
                         listStyle: "disc inside",
                         lineHeight: 1.6,
@@ -231,8 +227,7 @@ export default function ProductDevelopment() {
                     <li className="font-sf-regular">Дизайн продукта</li>
                     <li className="font-sf-regular">Первоначальный бэклог</li>
                 </ul>
-
             </div>
-        </section >
+        </section>
     );
 }
